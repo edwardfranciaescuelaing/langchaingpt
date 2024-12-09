@@ -1,4 +1,4 @@
-### **Aplicación Data Driven con ejemplos** 
+# **Aplicación Data Driven con ejemplos** 
 
 Este README proporciona una guía detallada para construir y actualizar una aplicación RAG siguiendo dos tutoriales oficiales de LangChain. Utilizaremos **Python 3.11.6** y un entorno virtual para garantizar la organización y aislamiento del entorno de desarrollo siguiendo la siguiente arquitectura.
 
