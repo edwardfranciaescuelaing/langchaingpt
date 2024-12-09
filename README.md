@@ -1,6 +1,4 @@
-
-# **Guía Profesional para Construir y Actualizar una App de Retrieval Augmented Generation (RAG)**  
-
+![image](https://github.com/user-attachments/assets/28c8a6ee-4923-464d-82d2-fafa8610854c)![image](https://github.com/user-attachments/assets/90ce7536-7591-4497-9dd9-5eaa095758b1)
 Este README proporciona una guía detallada para construir y actualizar una aplicación RAG siguiendo dos tutoriales oficiales de LangChain. Utilizaremos **Python 3.11.6** y un entorno virtual para garantizar la organización y aislamiento del entorno de desarrollo.  
 
 ---
@@ -9,8 +7,7 @@ Este README proporciona una guía detallada para construir y actualizar una apli
 
 ### Software necesario  
 1. **Python 3.11.6**: [Descargar aquí](https://www.python.org/downloads/).  
-2. Un editor de código, como [VS Code](https://code.visualstudio.com/) o PyCharm.  
-3. Acceso a Internet para instalar dependencias y conectarte a servicios externos como OpenAI y Pinecone.  
+2. Un editor de código, como [VS Code](https://code.visualstudio.com/).
 
 ### Servicios necesarios  
 1. **Clave API de OpenAI**: Regístrate en [OpenAI](https://platform.openai.com/) para obtener acceso.  
@@ -85,10 +82,17 @@ En este tutorial:
 
 ### Ejemplo de flujo del tutorial:  
 1. **Carga de datos**: Carga documentos desde tu fuente de conocimiento.  
-2. **Vectorización**: Usa un modelo como `text-embedding-ada-002` de OpenAI para generar embeddings.  
-3. **Almacenamiento en Pinecone**: Guarda los embeddings en el índice configurado.  
-4. **Recuperación**: Realiza búsquedas en Pinecone para obtener los vectores más relevantes basados en la consulta del usuario.  
-5. **Generación de Respuestas**: Combina los datos recuperados con LangChain para construir una respuesta final.  
+2. **Vectorización**: Usa un modelo como `text-embedding-3-large` de OpenAI para generar embeddings.  
+3. **Almacenamiento en Pinecone**: Guarda los embeddings en el índice configurado.
+
+   - Si la carga quedo correctamente en Pinecone se deberian ver de la siguiente forma
+
+   ![image](https://github.com/user-attachments/assets/2e4b3a78-e09b-4ff0-b28a-c0169482196e)
+   ![image](https://github.com/user-attachments/assets/c081717f-7c49-4764-a21d-094ed9341ece)
+   ![image](https://github.com/user-attachments/assets/b51cde29-6ccf-4f7a-8b1f-4c1f41e8538d)
+   ![image](https://github.com/user-attachments/assets/40d19c77-a1c9-4e5c-a86b-3849f32eeee8)
+
+4. **Generación de Respuestas**: Combina los datos recuperados con LangChain para construir una respuesta final.  
 
 ---
 
@@ -129,7 +133,7 @@ Prueba enviando consultas al modelo y observa cómo se generan las respuestas ut
      ```  
 
 2. **Entorno Jupyter (Opcional)**:  
-   Si deseas usar Jupyter Notebook para experimentar, instala el kernel e intégralo:  
+   Si deseas usar Jupyter Notebook para experimentar, instala el kernel e intégralo es muy importante la versión de python ya que en superiores ya no es posible usar las librerías del tutorial:  
    ```bash
    pip install ipykernel
    python -m ipykernel install --user --name=env --display-name "Python 3.11.6 (env)"
